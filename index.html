@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>หุ้น On (ONON)</title>
+<meta name="description" content="เอกสารประกอบการตัดสินใจหุ้น On Holding (ONON) — งบ 5 ปี งบ Q2/2569 เป้าปี 2029 เทียบคู่แข่ง มุมบวก/ลบ และเครื่องคิดสถานการณ์ · ข้อมูล ณ 25 ก.ย. 2569 · ไม่ใช่คำแนะนำการลงทุน">
+<meta property="og:title" content="หุ้น On Holding (ONON) — เอกสารประกอบการตัดสินใจ">
+<meta property="og:description" content="ธุรกิจยังแข็ง แต่หุ้นลงครึ่งหนึ่ง — คำถามที่ต้องตอบคือยอดขายอเมริกาจะกลับมาโตไหม · ข้อมูล ณ 25 ก.ย. 2569">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://tayakorn221.github.io/onon-stock-research/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme: light;
+  --page:#f9f9f7; --surface:#fcfcfb; --surface-2:#f2f1ed;
+  --ink:#0b0b0b; --ink-2:#52514e; --muted:#898781;
+  --grid:#e1e0d9; --axis:#c3c2b7; --border:rgba(11,11,11,.10);
+  --series:#2a78d6; --series-soft:#86b6ef; --series-wash:rgba(42,120,214,.10);
+  --good:#0ca30c; --good-ink:#006300; --bad:#d03b3b; --bad-ink:#b02a2a; --warn:#fab219;
+  --accent:#0b0b0b;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme: dark;
+    --page:#0d0d0d; --surface:#1a1a19; --surface-2:#232321;
+    --ink:#ffffff; --ink-2:#c3c2b7; --muted:#898781;
+    --grid:#2c2c2a; --axis:#383835; --border:rgba(255,255,255,.10);
+    --series:#3987e5; --series-soft:#1c5cab; --series-wash:rgba(57,135,229,.14);
+    --good:#0ca30c; --good-ink:#3cc43c; --bad:#e66767; --bad-ink:#f08a8a; --warn:#fab219;
+    --accent:#ffffff;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --page:#0d0d0d; --surface:#1a1a19; --surface-2:#232321;
+  --ink:#ffffff; --ink-2:#c3c2b7; --muted:#898781;
+  --grid:#2c2c2a; --axis:#383835; --border:rgba(255,255,255,.10);
+  --series:#3987e5; --series-soft:#1c5cab; --series-wash:rgba(57,135,229,.14);
+  --good:#0ca30c; --good-ink:#3cc43c; --bad:#e66767; --bad-ink:#f08a8a; --warn:#fab219;
+  --accent:#ffffff;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--page);color:var(--ink);
+  font-family:"IBM Plex Sans Thai","Leelawadee UI","Noto Sans Thai",system-ui,-apple-system,"Segoe UI",Tahoma,sans-serif;
+  font-size:16px;line-height:1.7}
+.wrap{max-width:880px;margin:0 auto;padding:40px 16px 80px}
+a{color:var(--series)}
+h1{font-size:clamp(28px,5vw,40px);line-height:1.25;margin:6px 0 10px;font-weight:700;letter-spacing:-.01em}
+h2{font-size:22px;line-height:1.35;margin:0 0 6px;font-weight:700}
+h3{font-size:17px;margin:0 0 6px;font-weight:600}
+p{margin:0 0 12px}
+.eyebrow{font-size:13px;color:var(--muted);letter-spacing:.04em}
+.lede{color:var(--ink-2);font-size:17px;max-width:680px}
+.num{font-variant-numeric:tabular-nums}
+section{margin-top:56px}
+.sec-no{font-size:13px;color:var(--muted);font-weight:600}
+.sec-sub{color:var(--ink-2);margin-bottom:20px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px}
+.verdict{margin-top:28px;display:grid;gap:0;border-radius:12px;overflow:hidden;border:1px solid var(--border);background:var(--surface)}
+.verdict div{padding:14px 20px;border-top:1px solid var(--border)}
+.verdict div:first-child{border-top:0}
+.verdict b{display:inline-block;min-width:0}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}
+.tile{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px 16px}
+.tile .k{font-size:13px;color:var(--ink-2)}
+.tile .v{font-size:26px;font-weight:700;line-height:1.3}
+.tile .n{font-size:12.5px;color:var(--muted)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.chart{width:100%;height:auto;display:block;overflow:visible}
+.chart text{font-family:inherit}
+.fig-title{font-weight:600;font-size:15px;margin-bottom:2px}
+.fig-sub{font-size:13px;color:var(--ink-2);margin-bottom:10px}
+.fig-note{font-size:12.5px;color:var(--muted);margin-top:8px}
+.tip{position:fixed;pointer-events:none;background:var(--ink);color:var(--page);font-size:13px;
+  padding:6px 10px;border-radius:8px;opacity:0;transition:opacity .12s;z-index:10;max-width:260px;line-height:1.5}
+table{width:100%;border-collapse:collapse;font-size:14.5px}
+th,td{text-align:right;padding:9px 10px;border-bottom:1px solid var(--grid);white-space:nowrap}
+th:first-child,td:first-child{text-align:left}
+th{font-weight:600;color:var(--ink-2);font-size:13px}
+tr.me td{font-weight:700;background:var(--series-wash)}
+.tscroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.bb{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.bb ul{margin:0;padding-left:0;list-style:none}
+.bb li{padding:10px 0;border-top:1px solid var(--grid)}
+.bb li:first-child{border-top:0}
+.bb .tag{display:inline-flex;align-items:center;gap:6px;font-weight:700;font-size:15px;margin-bottom:8px}
+.dot{width:10px;height:10px;border-radius:50%;display:inline-block}
+.calc-row{display:grid;grid-template-columns:1fr 110px;gap:4px 14px;align-items:center;margin-bottom:14px}
+.calc-row label{font-size:14.5px}
+.calc-row .hint{grid-column:1/-1;font-size:12.5px;color:var(--muted);margin-top:-2px}
+.calc-row output{text-align:right;font-weight:600;font-variant-numeric:tabular-nums}
+input[type=range]{grid-column:1/-1;width:100%;accent-color:var(--series)}
+.presets{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.presets button{font:inherit;font-size:14px;padding:6px 14px;border-radius:999px;border:1px solid var(--border);
+  background:var(--surface-2);color:var(--ink);cursor:pointer}
+.presets button[aria-pressed=true]{background:var(--ink);color:var(--page);border-color:var(--ink)}
+.result{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:6px}
+.result .tile .v{font-size:24px}
+.up{color:var(--good-ink)} .down{color:var(--bad-ink)}
+.watch{counter-reset:w;list-style:none;padding:0;margin:0}
+.watch li{counter-increment:w;position:relative;padding:12px 0 12px 40px;border-top:1px solid var(--grid)}
+.watch li:first-child{border-top:0}
+.watch li::before{content:counter(w);position:absolute;left:0;top:12px;width:26px;height:26px;border-radius:50%;
+  background:var(--surface-2);font-weight:700;font-size:13px;display:grid;place-items:center}
+.small{font-size:13.5px;color:var(--ink-2)}
+.warnbox{border-left:3px solid var(--warn);padding:10px 16px;background:var(--surface);border-radius:0 8px 8px 0;font-size:14.5px}
+.sources{font-size:13px;color:var(--ink-2);columns:2;column-gap:28px}
+.sources li{break-inside:avoid;margin-bottom:6px}
+footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--grid);font-size:13px;color:var(--muted)}
+.mob-only{display:none}
+@media (max-width:680px){
+  .mob-only{display:block;margin-bottom:8px}
+  .tiles,.result{grid-template-columns:repeat(2,1fr)}
+  .grid2,.bb{grid-template-columns:1fr}
+  .sources{columns:1}
+  .tile .v{font-size:22px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">เอกสารประกอบการตัดสินใจ · ข้อมูล ณ 25 ก.ย. 2569 · ราคาปิด 24 ก.ย.</div>
+  <h1>หุ้น On Holding (ONON)</h1>
+  <p class="lede">บริษัทเจ้าของรองเท้า On จากสวิตเซอร์แลนด์ จดทะเบียนในตลาด NYSE หน้านี้รวบรวมข้อเท็จจริง ตัวเลข และมุมมองทั้งฝั่งซื้อและฝั่งขาย เพื่อให้ตัดสินใจเองได้ ไม่ใช่คำแนะนำให้ซื้อหรือขาย</p>
+
+  <div class="verdict">
+    <div><b>ธุรกิจยังแข็งแรง</b> ยอดขายโตเฉลี่ยปีละ 43% ตลอด 4 ปีที่ผ่านมา อัตรากำไรขั้นต้นสูงเกือบ 65% มีเงินสดสุทธิและไม่มีภาระหนี้ที่น่ากังวล</div>
+    <div><b>แต่ราคาหุ้นลดลงครึ่งหนึ่ง</b> ตลาดกลัวว่ายอดขายในอเมริกาจะชะลอลง และมองว่าเป้าปี 2029 ทะเยอทะยานเกินไป</div>
+    <div><b>คำถามที่ต้องตอบคือ</b> คิดว่ายอดขายในอเมริกาจะกลับมาโตในปี 2027 หรือไม่ ถ้าคิดว่ากลับมาได้ ราคาตอนนี้ถือว่าถูก ถ้าไม่ ราคายังลงได้อีก</div>
+  </div>
+
+  <div class="tiles">
+    <div class="tile"><div class="k">ราคาหุ้น</div><div class="v num">$30.46</div><div class="n">มูลค่าตลาดรวม $10.2 พันล้าน</div></div>
+    <div class="tile"><div class="k">ลดลงจากจุดสูงสุด</div><div class="v num down">−52%</div><div class="n">สูงสุด $63.62 เมื่อ ม.ค. 2568</div></div>
+    <div class="tile"><div class="k">P/E ล่วงหน้า</div><div class="v num">16.6×</div><div class="n">ต่ำกว่า Nike (21×) และ Asics (21×)</div></div>
+    <div class="tile"><div class="k">กระแสเงินสดอิสระ</div><div class="v num">$529M</div><div class="n">คิดเป็น 5.2% ของมูลค่าตลาด</div></div>
+    <div class="tile"><div class="k">เงินสดสุทธิ</div><div class="v num">$838M</div><div class="n">เงินสดมากกว่าหนี้</div></div>
+    <div class="tile"><div class="k">ความผันผวน (Beta)</div><div class="v num">2.08</div><div class="n">แกว่งแรงเป็น 2 เท่าของตลาด</div></div>
+  </div>
+</header>
+
+<section>
+  <div class="sec-no">01</div>
+  <h2>On คือบริษัทอะไร</h2>
+  <p class="sec-sub">แบรนด์รองเท้าวิ่งพรีเมียมที่ขยายไปเป็นแบรนด์ไลฟ์สไตล์</p>
+  <div class="card">
+    <p>ก่อตั้งปี 2553 ที่ซูริก รองเท้าที่ขายได้มากที่สุดคือรุ่น Cloudmonster และ Cloud 6 ตอนนี้กำลังขยายไปทำเสื้อผ้า เทนนิส (Roger Federer ถือหุ้นและเป็นพาร์ตเนอร์) และประกาศจะเข้าตลาด<b>ฟุตบอล</b>กับ<b>กอล์ฟ</b></p>
+    <p>ข้อมูลงวด Q2/2569: <b>รองเท้า</b>คิดเป็น 92% ของยอดขาย · <b>อเมริกา</b> 53% · <b>ยุโรป/ตะวันออกกลาง/แอฟริกา (EMEA)</b> 27% · <b>เอเชียแปซิฟิก (APAC)</b> 20% · ขายตรงถึงลูกค้า (DTC) 46% ส่วนที่เหลือขายผ่านร้านค้าส่ง (wholesale)</p>
+    <p class="small" style="margin:0"><b>ผู้บริหาร:</b> Martin Hoffmann เป็น CEO คนเดียวตั้งแต่ ก.ค. 2568 หลัง Marc Maurer ซึ่งเป็น co-CEO ลาออก ผู้ก่อตั้งทั้งสามยังนั่งอยู่ในทีมบริหาร · <b>โครงสร้างหุ้น:</b> ผู้ก่อตั้งถือหุ้น Class B ที่มีสิทธิโหวตมากกว่า 10 เท่า จึงคุมมติผู้ถือหุ้นได้ ผู้ถือหุ้นรายย่อยที่ซื้อหุ้น Class A แทบไม่มีเสียงในการตัดสินใจ</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-no">02</div>
+  <h2>ยอดขายโตเร็ว แต่อัตราการเติบโตกำลังชะลอลง</h2>
+  <p class="sec-sub">ยอดขายโตขึ้น 4 เท่าใน 4 ปี อัตรากำไรขั้นต้นก็ขยับขึ้นทุกปี จุดที่ตลาดกังวลอยู่ที่กราฟขวาบน</p>
+  <div class="card" style="margin-bottom:16px">
+    <div class="fig-title">ยอดขายรายปี (ล้านฟรังก์สวิส)</div>
+    <div class="fig-sub">แท่งสีอ่อนคือปี 2569 ใช้ค่ากลางของประมาณการบริษัท (3,470–3,560)</div>
+    <svg id="revChart" class="chart" viewBox="0 0 800 300" role="img" aria-label="กราฟยอดขาย 2564 ถึง 2569"></svg>
+  </div>
+  <div class="grid2">
+    <div class="card">
+      <div class="fig-title">อัตราการเติบโตของยอดขาย</div>
+      <div class="fig-sub">เทียบปีก่อน คิดเป็นฟรังก์สวิส</div>
+      <svg id="growthChart" class="chart" viewBox="0 0 400 240" role="img" aria-label="อัตราการเติบโตยอดขายลดลงจาก 70% เหลือราว 17%"></svg>
+      <div class="fig-note">ปี 2569 ถ้าตัดผลค่าเงินออก บริษัทคาดว่าจะโตราว 20% ต้น ๆ เพราะเงินดอลลาร์อ่อนค่า ทำให้ยอดขายที่แปลงกลับเป็นฟรังก์ลดลง</div>
+    </div>
+    <div class="card">
+      <div class="fig-title">อัตรากำไรขั้นต้น</div>
+      <div class="fig-sub">ยิ่งสูงยิ่งแสดงว่าขายได้ในราคาเต็ม ไม่ต้องลดราคา</div>
+      <svg id="gmChart" class="chart" viewBox="0 0 400 240" role="img" aria-label="อัตรากำไรขั้นต้นเพิ่มจาก 56% เป็น 65%"></svg>
+      <div class="fig-note">ปี 2569 บริษัทรับภาระภาษีนำเข้าของสหรัฐฯ ไว้เองทั้งหมด แต่อัตรากำไรยังขึ้นได้ เป็นสัญญาณว่าแบรนด์มีอำนาจกำหนดราคา</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-no">03</div>
+  <h2>งบ Q2/2569 ทำไมหุ้นร่วง 20% <span style="white-space:nowrap">ในวันเดียว</span></h2>
+  <p class="sec-sub">วันที่ 11 ส.ค. หุ้นลดจาก $38.78 เหลือ $30.91 ทั้งที่กำไรออกมาดี</p>
+  <div class="grid2">
+    <div class="card">
+      <div class="fig-title">การเติบโตรายภูมิภาค Q2/2569</div>
+      <div class="fig-sub">ตัดผลค่าเงินแล้ว · ตัวเลขในวงเล็บคือสัดส่วนของยอดขายรวม</div>
+      <svg id="regionChart" class="chart" viewBox="0 0 400 200" role="img" aria-label="APAC โต 54.7% EMEA 20.5% Americas 13.0%"></svg>
+      <div class="fig-note">ตลาดที่ใหญ่ที่สุดโตช้าที่สุด อเมริกาโต 28.6% ใน Q2/2568 และ 17% ใน Q1/2569 ก่อนลงมาเหลือ 13%</div>
+    </div>
+    <div class="card">
+      <h3>ข้อดีที่ตลาดมองข้ามไป</h3>
+      <p class="small">กำไรสุทธิ 105 ล้านฟรังก์ ขณะที่ Q2 ปีก่อนขาดทุน 41 ล้าน · อัตรากำไรขั้นต้น 65.4% · ยอดขายตรงถึงลูกค้าโต 34% · เสื้อผ้าโต 56% · เงินสด 1,206 ล้านฟรังก์</p>
+      <h3 style="margin-top:14px">สิ่งที่ทำให้ตลาดผิดหวัง</h3>
+      <p class="small" style="margin:0">ยอดขาย 850 ล้านฟรังก์ ต่ำกว่าที่นักวิเคราะห์คาดไว้ราว 878 ล้าน · ลดเป้าการเติบโตทั้งปีจาก "อย่างน้อย 23%" เหลือ "20% ต้น ๆ" · ร้านค้าส่งในอเมริกาโตแค่ 4.8% (คิดเป็นฟรังก์) · CFO ยอมรับว่าตลาดมีการลดราคาหนัก รองเท้าวิ่งรุ่นหลักขายออกช้าลง</p>
+    </div>
+  </div>
+  <p class="warnbox" style="margin-top:16px">⚠️ มีบางเว็บรายงานว่ายอดขาย "ต่ำกว่าคาด 23.7%" (เทียบกับตัวเลขคาดการณ์ 1,114 ล้าน) ตัวเลขนี้ผิด ตัวเลขคาดการณ์จริงอยู่ที่ราว 878 ล้าน ยอดขายจึงต่ำกว่าคาดแค่ประมาณ 3%</p>
+</section>
+
+<section>
+  <div class="sec-no">04</div>
+  <h2>สัปดาห์ที่แล้ว: Mbappé และ Investor Day</h2>
+  <p class="sec-sub">สองข่าวที่ทำให้หุ้นเด้งจากจุดต่ำสุดรอบ 52 สัปดาห์ที่ $26.36</p>
+  <div class="grid2">
+    <div class="card">
+      <h3>18 ก.ย. เซ็นสัญญา Kylian Mbappé 10 ปี</h3>
+      <p class="small" style="margin:0">Mbappé ย้ายมาจาก Nike ที่ร่วมงานกันมา 20 ปี On จะทำรองเท้าสตั๊ดด้วยเทคโนโลยี LightSpray ตลาดรองเท้าฟุตบอลทั่วโลกมีมูลค่าราว $20 พันล้าน และเกือบทั้งหมดเป็นของ Nike กับ Adidas · Evercore มองว่าเป็นการท้าชน Nike และ Adidas โดยตรง ส่วน Jefferies มองว่าเพิ่มต้นทุนมากกว่าจะเพิ่มโอกาส</p>
+    </div>
+    <div class="card">
+      <h3>22 ก.ย. Investor Day เป้าปี 2569–2572</h3>
+      <p class="small" style="margin:0">ยอดขายโตปีละ high-teens % ให้ถึง<b>อย่างน้อย 5.6 พันล้านฟรังก์</b>ในปี 2572 · อัตรากำไรขั้นต้น 65% ขึ้นไป · อัตรากำไร EBITDA ที่ปรับปรุงแล้ว (adjusted) <b>22% ขึ้นไป</b> · EBITDA โตเฉลี่ยเกิน 20% ต่อปี · <b>ซื้อหุ้นคืน $1 พันล้าน</b>จนถึงสิ้นปี 2572 (ประมาณ 10% ของมูลค่าตลาด) · วันนั้นหุ้นขึ้น 13%</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-no">05</div>
+  <h2>ราคาตอนนี้แพงหรือถูกเมื่อเทียบกับ<span style="white-space:nowrap">คู่แข่ง</span></h2>
+  <p class="sec-sub">อัตรากำไรขั้นต้นของ On สูงสุดในกลุ่ม แต่ราคาหุ้นเมื่อเทียบกับกำไรอยู่ระดับกลาง ๆ ต่างจากเมื่อก่อนที่ตลาดยอมจ่ายแพงกว่าคู่แข่งมาก</p>
+  <p class="small mob-only">← เลื่อนตารางไปทางซ้ายเพื่อดูคอลัมน์อื่น</p>
+  <div class="card tscroll">
+    <table class="num">
+      <thead><tr><th>บริษัท</th><th>P/E ล่วงหน้า</th><th>EV/EBITDA</th><th>EV/ยอดขาย</th><th>กำไรขั้นต้น</th><th>กำไรจากการดำเนินงาน</th><th>ราคา 1 ปี</th></tr></thead>
+      <tbody>
+        <tr class="me"><td>On (ONON)</td><td>16.6×</td><td>15.4×</td><td>2.34×</td><td>64.8%</td><td>13.8%</td><td class="down">−34%</td></tr>
+        <tr><td>Deckers (Hoka, UGG)</td><td>10.3×</td><td>7.2×</td><td>1.73×</td><td>57.8%</td><td>22.7%</td><td class="down">−30%</td></tr>
+        <tr><td>Nike</td><td>21.2×</td><td>11.2×</td><td>1.19×</td><td>43.3%</td><td>9.0%</td><td class="down">−49%</td></tr>
+        <tr><td>Amer Sports (Salomon, Arc'teryx)</td><td>18.5×</td><td>13.2×</td><td>2.15×</td><td>59.8%</td><td>13.0%</td><td class="down">−22%</td></tr>
+        <tr><td>Asics</td><td>21.0×</td><td>13.5×</td><td>3.05×</td><td>57.1%</td><td>19.3%</td><td class="up">+7%</td></tr>
+      </tbody>
+    </table>
+    <p class="fig-note" style="margin-bottom:0">ที่มา: stockanalysis.com ราคาปิด 24–25 ก.ย. 2569 · EV คือมูลค่ากิจการ (มูลค่าตลาดบวกหนี้หักเงินสด) · ข้อสังเกต: On มีกำไรขั้นต้นสูงสุด แต่กำไรจากการดำเนินงานต่ำกว่า Deckers กับ Asics เพราะใช้เงินทำการตลาดและขยายร้านเยอะ ถ้าเป้า EBITDA 22% ทำได้จริง ช่องว่างนี้จะแคบลง</p>
+  </div>
+  <p class="small" style="margin-top:14px">ภาพรวม: ทั้งกลุ่มเครื่องแต่งกายกีฬาถูกลดมูลค่าลงพร้อมกันในปีนี้ Nike ลดลงเกือบครึ่ง ส่วน On ลดลงน้อยกว่า ราคาหุ้นที่ต่ำลงจึงมาจากปัญหาของทั้งอุตสาหกรรมส่วนหนึ่ง และปัญหาของ On เองอีกส่วนหนึ่ง</p>
+</section>
+
+<section>
+  <div class="sec-no">06</div>
+  <h2>ฝั่งที่มองบวก และฝั่งที่มองลบ</h2>
+  <p class="sec-sub">นักวิเคราะห์ 31 รายให้ราคาเป้าหมายเฉลี่ย $42.93 ช่วงตั้งแต่ $20 (Jefferies) ถึงราว $99</p>
+  <div class="bb">
+    <div class="card">
+      <div class="tag"><span class="dot" style="background:var(--good)"></span>▲ มุมมองฝั่งบวก</div>
+      <ul class="small">
+        <li><b>ขายได้ในราคาเต็ม</b> อัตรากำไรขั้นต้น 65% สูงสุดในอุตสาหกรรม และยังเพิ่มขึ้นได้แม้ต้องจ่ายภาษีนำเข้าเพิ่ม</li>
+        <li><b>ช่องทางเติบโตใหม่เริ่มให้ผล</b> APAC โต 55% · เสื้อผ้าโต 56% · ขายตรงถึงลูกค้าโต 34% และช่องทางนี้มีกำไรสูงกว่าขายส่ง</li>
+        <li><b>ฐานะการเงินแน่น</b> เงินสดสุทธิ กระแสเงินสดอิสระเกิน $500M ต่อปี และมีโครงการซื้อหุ้นคืน $1B</li>
+        <li><b>ราคาไม่แพงแล้ว</b> P/E ล่วงหน้า 16.6 เท่า ต่ำกว่า Nike ที่โตช้ากว่ามาก</li>
+        <li><b>ชะลอการขายส่งโดยตั้งใจ</b> บริษัทบอกว่ากำลังคุมสต๊อกในร้านค้าส่งให้สะอาด ก่อนจะออกสินค้าใหม่ชุดใหญ่ในปี 2570</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="tag"><span class="dot" style="background:var(--bad)"></span>▼ มุมมองฝั่งลบ</div>
+      <ul class="small">
+        <li><b>ตลาดที่ใหญ่ที่สุดชะลอลง</b> อเมริกาเป็นครึ่งหนึ่งของยอดขาย การเติบโตชะลอลงต่อเนื่อง จาก 28.6% เป็น 17% และ 13% Jefferies คาดว่าอาจติดลบในปี 2570</li>
+        <li><b>เป้าปี 2029 อาจทำไม่ได้</b> Jefferies ให้ราคาเป้าหมาย $20 และให้เหตุผลว่า "We see ambition, not the math" คือเป้าต้องอาศัยการเติบโตที่เร่งกลับขึ้นมา ทั้งที่ฐานกำลังชะลอลง</li>
+        <li><b>ความเสี่ยงเป็นแค่กระแส</b> แบรนด์ที่ดังเร็วอย่าง Allbirds หรือ Crocs ช่วงแรกเคยตกเร็วเหมือนกัน และคู่แข่งอย่าง Hoka, Asics และ Nike ที่กำลังฟื้น ก็ยังแข่งดุ</li>
+        <li><b>ธุรกิจใหม่ต้องใช้เงินเยอะ</b> ฟุตบอลกับกอล์ฟต้องจ่ายค่านักกีฬาและการตลาดสูง แต่กว่าจะมีกำไรต้องใช้เวลาหลายปี</li>
+        <li><b>ผู้ถือหุ้นรายย่อยไม่มีเสียง</b> ผู้ก่อตั้งคุมมติผ่านหุ้น Class B และมีนักลงทุนขายชอร์ตอยู่ 6.9% ของหุ้นทั้งหมด</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-no">07</div>
+  <h2>ลองคำนวณเอง: ถ้าเป็นแบบนี้ หุ้นควรมีราคาเท่าไหร่</h2>
+  <p class="sec-sub">โมเดลอย่างง่าย: ยอดขายปี 2572 × อัตรากำไร EBITDA × ค่าเงิน × EV/EBITDA ที่ตลาดให้ บวกเงินสดสุทธิ แล้วหารด้วยจำนวนหุ้น</p>
+  <div class="card">
+    <div class="presets" role="group" aria-label="สถานการณ์">
+      <button data-p="bear">กรณีแย่ (ตามแนว Jefferies)</button>
+      <button data-p="base" aria-pressed="true">กรณีกลาง</button>
+      <button data-p="bull">ทำได้ตามเป้าบริษัท</button>
+    </div>
+    <div class="calc-row">
+      <label for="s">ยอดขายปี 2572 (พันล้านฟรังก์)</label><output id="so" class="num"></output>
+      <input type="range" id="s" min="3.5" max="6.5" step="0.1">
+      <div class="hint">ปี 2569 คาดไว้ราว 3.5 · เป้าบริษัทคือ 5.6 ขึ้นไป</div>
+    </div>
+    <div class="calc-row">
+      <label for="m">อัตรากำไร EBITDA ที่ปรับปรุงแล้ว</label><output id="mo" class="num"></output>
+      <input type="range" id="m" min="15" max="25" step="0.5">
+      <div class="hint">ปี 2569 คาด 19.5–20% · เป้าบริษัทคือ 22% ขึ้นไป</div>
+    </div>
+    <div class="calc-row">
+      <label for="x">EV/EBITDA ที่ตลาดจะให้</label><output id="xo" class="num"></output>
+      <input type="range" id="x" min="6" max="20" step="0.5">
+      <div class="hint">Deckers 7.2 · Nike 11.2 · Asics 13.5 · On ตอนนี้ 15.4</div>
+    </div>
+    <div class="calc-row">
+      <label for="f">อัตราแลกเปลี่ยน (ดอลลาร์ต่อ 1 ฟรังก์)</label><output id="fo" class="num"></output>
+      <input type="range" id="f" min="1.00" max="1.40" step="0.01">
+      <div class="hint">บริษัทแปลงเป้า 5.6 พันล้านฟรังก์ได้ประมาณ $6.84 พันล้าน คิดเป็นราว 1.22</div>
+    </div>
+    <div class="result">
+      <div class="tile"><div class="k">ราคาต่อหุ้นโดยประมาณ</div><div class="v num" id="rp"></div><div class="n">ณ ช่วงต้นปี 2573</div></div>
+      <div class="tile"><div class="k">เทียบกับราคาวันนี้ $30.46</div><div class="v num" id="rc"></div><div class="n">ผลตอบแทนรวม</div></div>
+      <div class="tile"><div class="k">เฉลี่ยต่อปี</div><div class="v num" id="ra"></div><div class="n">คิดจากระยะเวลาประมาณ 3.3 ปี</div></div>
+    </div>
+    <p class="fig-note" style="margin-bottom:0">⚠️ ตัวเลขนี้ใช้คิดเล่นเพื่อทดสอบสมมติฐาน ไม่ใช่การพยากรณ์ มีข้อจำกัดดังนี้: EV/EBITDA ของคู่แข่งส่วนใหญ่คำนวณจาก EBITDA ตามงบ ซึ่งต่ำกว่า adjusted EBITDA ผลลัพธ์จึงค่อนไปทางดีเกินจริง · ใช้เงินสดสุทธิเท่ากับวันนี้ ($0.84B) และจำนวนหุ้น 334 ล้านหุ้นคงที่ ไม่รวมผลของการซื้อหุ้นคืน · ไม่ได้คิดส่วนลดตามเวลา (discount) · ไม่รวมความเสี่ยงค่าเงินบาท</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-no">08</div>
+  <h2>สัญญาณที่ต้องจับตา</h2>
+  <p class="sec-sub">ถ้ายังไม่แน่ใจ รอดูตัวเลขเหล่านี้ก่อนตัดสินใจก็ได้ แต่ถ้าตัวเลขออกมาดี ราคาหุ้นมักขยับขึ้นไปก่อนแล้ว</p>
+  <div class="card">
+    <ol class="watch small">
+      <li><b>งบ Q3/2569</b> บริษัทบอกไว้ว่ายอดขายจะโตราว 17% หลังตัดผลค่าเงิน ถ้าออกมาต่ำกว่านี้ ฝั่งที่มองลบจะมีน้ำหนักขึ้นทันที</li>
+      <li><b>ยอดขายส่งในอเมริกา</b> นี่คือตัวชี้ขาดว่าที่ยอดชะลอลงเป็นเพราะบริษัทตั้งใจคุมสต๊อก หรือเพราะคนซื้อน้อยลงจริง</li>
+      <li><b>อัตรากำไรขั้นต้นต้องอยู่ที่ 65% ขึ้นไป</b> ถ้าต่ำลงแปลว่าเริ่มต้องลดราคาขาย ซึ่งเป็นสัญญาณแรกที่แบรนด์เริ่มหมดกระแส</li>
+      <li><b>สินค้าใหม่ปี 2570</b> บริษัทบอกไว้ว่าจะมีนวัตกรรมใหม่ชุดใหญ่ ต้องดูว่าคนตอบรับจริงหรือไม่</li>
+      <li><b>บริษัทซื้อหุ้นคืนจริงเท่าไหร่</b> ถ้าซื้อคืนเร็วตอนราคาต่ำ แสดงว่าผู้บริหารเชื่อในราคาหุ้นของตัวเอง</li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <div class="sec-no">09</div>
+  <h2>เรื่องเฉพาะนักลงทุนไทย</h2>
+  <div class="card small">
+    <p><b>ความเสี่ยงค่าเงินสองชั้น</b> บริษัทรายงานงบเป็นฟรังก์สวิส หุ้นซื้อขายเป็นดอลลาร์ และเงินที่ลงทุนเป็นบาท การเปลี่ยนแปลงของ CHF/USD และ USD/THB มีผลกับผลตอบแทนทั้งคู่</p>
+    <p><b>บริษัทไม่จ่ายปันผล</b> ผลตอบแทนมาจากราคาหุ้นที่ขึ้นเท่านั้น ส่วนการซื้อหุ้นคืนช่วยให้แต่ละหุ้นมีส่วนในกำไรมากขึ้น</p>
+    <p><b>ภาษี</b> ตั้งแต่ปี 2567 เงินได้จากต่างประเทศที่นำกลับเข้าไทยต้องนำมาคำนวณภาษีเงินได้ ควรเช็กกับโบรกเกอร์หรือนักบัญชีก่อนขายหุ้นและโอนกำไรกลับไทย</p>
+    <p style="margin:0"><b>ขนาดของเงินลงทุน</b> หุ้นตัวนี้มี Beta 2 และเคยลงวันเดียว 20% ผู้ที่ลงทุนหุ้นแบบนี้ส่วนใหญ่จะใส่เงินไม่มากเมื่อเทียบกับทั้งพอร์ต ส่วนสัดส่วนที่เหมาะกับแต่ละคนขึ้นกับเป้าหมายและเงินทั้งหมดที่มี ควรปรึกษาที่ปรึกษาการลงทุนที่มีใบอนุญาต</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-no">ที่มา</div>
+  <h2>แหล่งข้อมูล</h2>
+  <ul class="sources">
+    <li><a href="https://www.sec.gov/Archives/edgar/data/0001858985/000185898526000018/a26q2-ex993xpressrelease.htm">On Q2/2026 press release (SEC 6-K)</a></li>
+    <li><a href="https://www.sec.gov/Archives/edgar/data/1858985/000185898526000021/exhibit991oninvestorday202.htm">On Investor Day 2026 targets (SEC 6-K)</a></li>
+    <li><a href="https://investors.on-running.com/news/news-details/2026/On-Announces-Fourth-Quarter-and-Full-Year-Results-and-the-Filing-of-its-Annual-Report-on-Form-20-F-for-2025/default.aspx">On FY2025 results</a></li>
+    <li><a href="https://press.on-running.com/on-reports-first-quarter-2026-results">On Q1/2026 results</a></li>
+    <li><a href="https://stockanalysis.com/stocks/onon/statistics/">stockanalysis — ONON statistics</a> · <a href="https://stockanalysis.com/stocks/onon/financials/">financials</a></li>
+    <li><a href="https://stockanalysis.com/stocks/deck/statistics/">Deckers</a> · <a href="https://stockanalysis.com/stocks/nke/statistics/">Nike</a> · <a href="https://stockanalysis.com/stocks/as/statistics/">Amer Sports</a> · <a href="https://stockanalysis.com/quote/tyo/7936/statistics/">Asics</a></li>
+    <li><a href="https://finance.yahoo.com/markets/stocks/articles/holding-q2-2026-earnings-stock-171220135.html">Yahoo Finance — Q2 sales miss</a></li>
+    <li><a href="https://www.investing.com/news/analyst-ratings/jefferies-maintains-underperform-on-on-holding-stock-cites-risks-93CH-4907564">Investing.com — Jefferies Underperform $20</a></li>
+    <li><a href="https://finance.yahoo.com/markets/stocks/articles/holding-shares-surge-11-despite-155000903.html">Yahoo/Proactive — analyst skepticism on Investor Day</a></li>
+    <li><a href="https://finance.yahoo.com/markets/stocks/article/on-holdings-kylian-mbappe-bet-a-direct-challenge-to-nike-and-adidas-analyst-193202945.html">Yahoo — Mbappé deal, Evercore view</a></li>
+    <li><a href="https://www.bloomberg.com/news/articles/2026-09-18/mbappe-signs-for-on-s-push-into-football-in-blow-for-nike">Bloomberg — Mbappé signs for On</a></li>
+    <li><a href="https://www.businesswire.com/news/home/20250401111504/en/On-Announces-Leadership-Evolution">On — Leadership evolution (Apr 2025)</a></li>
+    <li><a href="https://www.sec.gov/Archives/edgar/data/1858985/000119312521253415/d175570df1.htm">On F-1 (Class A/B voting structure)</a></li>
+    <li><a href="https://www.macrotrends.net/stocks/charts/ONON/on-holding-ag/stock-price-history">Macrotrends — price history (ATH $63.62)</a></li>
+  </ul>
+</section>
+
+<footer>
+  เอกสารนี้รวบรวมข้อมูลสาธารณะเพื่อประกอบการตัดสินใจเท่านั้น ไม่ใช่คำแนะนำการลงทุน ผู้จัดทำไม่ใช่ที่ปรึกษาการลงทุนที่มีใบอนุญาต ตัวเลขอาจเปลี่ยนไปหลังวันที่ระบุ · จัดทำ 25 ก.ย. 2569
+</footer>
+</div>
+<div class="tip" id="tip"></div>
+
+<script>
+(function(){
+const NS="http://www.w3.org/2000/svg";
+const tip=document.getElementById('tip');
+function el(tag,attrs,parent){const e=document.createElementNS(NS,tag);for(const k in attrs)e.setAttribute(k,attrs[k]);if(parent)parent.appendChild(e);return e;}
+function showTip(ev,html){tip.innerHTML=html;tip.style.opacity=1;moveTip(ev);}
+function moveTip(ev){const x=Math.min(ev.clientX+14,window.innerWidth-270);tip.style.left=x+'px';tip.style.top=(ev.clientY+14)+'px';}
+function hideTip(){tip.style.opacity=0;}
+function hover(node,html){node.style.cursor='default';node.addEventListener('pointerenter',e=>showTip(e,html));node.addEventListener('pointermove',moveTip);node.addEventListener('pointerleave',hideTip);}
+const fmt=n=>n.toLocaleString('en-US');
+// top-rounded column path
+function colPath(x,y,w,h,r){r=Math.min(r,h,w/2);return `M${x},${y+h}V${y+r}Q${x},${y} ${x+r},${y}H${x+w-r}Q${x+w},${y} ${x+w},${y+r}V${y+h}Z`;}
+function barPathH(x,y,w,h,r){r=Math.min(r,w,h/2);return `M${x},${y}H${x+w-r}Q${x+w},${y} ${x+w},${y+r}V${y+h-r}Q${x+w},${y+h} ${x+w-r},${y+h}H${x}Z`;}
+
+// draw each chart at its real pixel width so text stays at true size on phones
+function fit(svg,H){svg.innerHTML='';const W=Math.max(280,Math.round(svg.getBoundingClientRect().width))||400;svg.setAttribute('viewBox',`0 0 ${W} ${H}`);return W;}
+
+// 1. Revenue columns
+function drawRev(){
+  const svg=document.getElementById('revChart');
+  const d=[["2564",724.6],["2565",1222],["2566",1792],["2567",2318],["2568",3014],["2569F",3515]];
+  const H=300,W=fit(svg,H),narrow=W<520,L=narrow?44:56,R=10,T=24,B=36,max=4000;
+  const y=v=>T+(H-T-B)*(1-v/max);
+  [0,1000,2000,3000,4000].forEach(t=>{
+    el('line',{x1:L,x2:W-R,y1:y(t),y2:y(t),stroke:'var(--grid)','stroke-width':1},svg);
+    const tx=el('text',{x:L-10,y:y(t)+4,'text-anchor':'end','font-size':12,fill:'var(--muted)'},svg);tx.textContent=fmt(t);
+  });
+  const band=(W-L-R)/d.length,bw=Math.min(56,band*.55);
+  d.forEach((p,i)=>{
+    const cx=L+band*i+band/2,h=(H-T-B)*p[1]/max,proj=p[0].endsWith('F');
+    const g=el('g',{},svg);
+    el('rect',{x:cx-band/2,y:T,width:band,height:H-T-B,fill:'transparent'},g);
+    el('path',{d:colPath(cx-bw/2,y(p[1]),bw,h,4),fill:proj?'var(--series-soft)':'var(--series)'},g);
+    const lb=el('text',{x:cx,y:y(p[1])-8,'text-anchor':'middle','font-size':narrow?12:13,'font-weight':600,fill:'var(--ink)'},g);lb.textContent=fmt(Math.round(p[1]));
+    const xl=el('text',{x:cx,y:H-B+22,'text-anchor':'middle','font-size':narrow?11:13,fill:'var(--ink-2)'},g);xl.textContent=narrow?p[0]:p[0].replace('F',' (คาด)');
+    hover(g,`<b>${p[0].replace('F',' ประมาณการ')}</b><br>ยอดขาย ${fmt(p[1])} ล้าน CHF`+(proj?'<br>ช่วงประมาณการ 3,470–3,560':''));
+  });
+  el('line',{x1:L,x2:W-R,y1:y(0),y2:y(0),stroke:'var(--axis)','stroke-width':1},svg);
+}
+
+// 2/3. small line charts
+function lineChart(id,data,opts){
+  const svg=document.getElementById(id);
+  const H=240,W=fit(svg,H),L=40,R=10,T=22,B=30;
+  const {min,max,ticks,suffix}=opts;
+  const PAD=22,x=i=>L+PAD+(W-L-R-2*PAD)*i/(data.length-1);
+  const y=v=>T+(H-T-B)*(1-(v-min)/(max-min));
+  ticks.forEach(t=>{
+    el('line',{x1:L,x2:W-R,y1:y(t),y2:y(t),stroke:'var(--grid)','stroke-width':1},svg);
+    const tx=el('text',{x:L-8,y:y(t)+4,'text-anchor':'end','font-size':11,fill:'var(--muted)'},svg);tx.textContent=t+suffix;
+  });
+  const solid=data.filter(p=>!p[2]);
+  el('path',{d:solid.map((p,i)=>(i?'L':'M')+x(i)+','+y(p[1])).join(''),fill:'none',stroke:'var(--series)','stroke-width':2,'stroke-linejoin':'round','stroke-linecap':'round'},svg);
+  const li=solid.length-1;
+  if(data.length>solid.length){
+    el('path',{d:`M${x(li)},${y(solid[li][1])}L${x(data.length-1)},${y(data[data.length-1][1])}`,fill:'none',stroke:'var(--series)','stroke-width':2,'stroke-dasharray':'4 4','stroke-linecap':'round'},svg);
+  }
+  data.forEach((p,i)=>{
+    const g=el('g',{},svg);
+    el('rect',{x:x(i)-18,y:T,width:36,height:H-T-B,fill:'transparent'},g);
+    el('circle',{cx:x(i),cy:y(p[1]),r:4.5,fill:p[2]?'var(--surface)':'var(--series)',stroke:p[2]?'var(--series)':'var(--surface)','stroke-width':2},g);
+    const xl=el('text',{x:x(i),y:H-B+20,'text-anchor':'middle','font-size':11,fill:'var(--ink-2)'},g);xl.textContent=p[0];
+    if(i===0||i===data.length-1||p[3]){
+      const lb=el('text',{x:x(i),y:y(p[1])-11,'text-anchor':'middle','font-size':12,'font-weight':600,fill:'var(--ink)'},g);lb.textContent=p[1]+suffix;
+    }
+    hover(g,`<b>${p[0]}</b><br>${opts.name} ${p[1]}${suffix}`+(p[2]?'<br>'+opts.projNote:''));
+  });
+}
+function drawLines(){
+lineChart('growthChart',[["2564",70.4],["2565",68.7],["2566",46.6],["2567",29.4],["2568",30.0,false,true],["2569F",16.6,true]],
+  {min:0,max:80,ticks:[0,20,40,60,80],suffix:'%',name:'โต',projNote:'ค่ากลางประมาณการ (คิดเป็น CHF)<br>ตัดผลค่าเงินแล้ว ≈ 20% ต้น ๆ'});
+lineChart('gmChart',[["2564",59.4],["2565",56.0],["2566",59.6],["2567",60.6],["2568",62.8],["TTM",64.8],["2569F",65.0,true]],
+  {min:50,max:70,ticks:[50,55,60,65,70],suffix:'%',name:'กำไรขั้นต้น',projNote:'ประมาณการบริษัท: อย่างน้อย 65%'});
+}
+
+// 4. Region bars
+function drawRegion(){
+  const svg=document.getElementById('regionChart');
+  const d=[["เอเชียแปซิฟิก",54.7,20],["EMEA",20.5,27],["อเมริกา",13.0,53]];
+  const W=fit(svg,200),L=110,R=56,T=10,rowH=56,bh=22,max=60;
+  const x=v=>L+(W-L-R)*v/max;
+  d.forEach((p,i)=>{
+    const cy=T+rowH*i+rowH/2;
+    const g=el('g',{},svg);
+    el('rect',{x:0,y:cy-rowH/2,width:W,height:rowH,fill:'transparent'},g);
+    const t=el('text',{x:L-10,y:cy-2,'text-anchor':'end','font-size':13,fill:'var(--ink)'},g);t.textContent=p[0];
+    const s=el('text',{x:L-10,y:cy+15,'text-anchor':'end','font-size':11,fill:'var(--muted)'},g);s.textContent='('+p[2]+'% ของยอดขาย)';
+    el('path',{d:barPathH(L,cy-bh/2,x(p[1])-L,bh,4),fill:'var(--series)'},g);
+    const v=el('text',{x:x(p[1])+8,y:cy+5,'font-size':13,'font-weight':600,fill:'var(--ink)'},g);v.textContent='+'+p[1]+'%';
+    hover(g,`<b>${p[0]}</b><br>โต ${p[1]}% (ตัดผลค่าเงิน)<br>สัดส่วน ${p[2]}% ของยอดขาย Q2`);
+  });
+  el('line',{x1:L,x2:L,y1:T,y2:T+rowH*d.length,stroke:'var(--axis)','stroke-width':1},svg);
+}
+
+function drawAll(){drawRev();drawLines();drawRegion();}
+drawAll();
+// a background tab reports width 0 until it's shown — redraw whenever a chart's real width changes
+let rt,lastWidths='';
+function redrawIfChanged(){
+  const w=['revChart','growthChart','regionChart'].map(id=>Math.round(document.getElementById(id).getBoundingClientRect().width)).join(',');
+  if(w!==lastWidths&&!w.startsWith('0')){lastWidths=w;drawAll();}
+}
+function schedule(){clearTimeout(rt);rt=setTimeout(redrawIfChanged,120);}
+if('ResizeObserver' in window){const ro=new ResizeObserver(schedule);['revChart','growthChart','gmChart','regionChart'].forEach(id=>ro.observe(document.getElementById(id)));}
+window.addEventListener('resize',schedule);
+document.addEventListener('visibilitychange',()=>{if(!document.hidden){lastWidths='';schedule();}});
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(()=>{lastWidths='';schedule();});
+
+// 5. Calculator
+const P={bear:{s:4.3,m:18,x:8,f:1.22},base:{s:5.0,m:20.5,x:11,f:1.22},bull:{s:5.6,m:22,x:15,f:1.22}};
+const ids=['s','m','x','f'],NET=0.84,SH=0.33421,NOW=30.46,YRS=3.3;
+function setP(k){ids.forEach(i=>document.getElementById(i).value=P[k][i]);
+  document.querySelectorAll('.presets button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.p===k));calc();}
+function calc(){
+  const v={};ids.forEach(i=>v[i]=parseFloat(document.getElementById(i).value));
+  document.getElementById('so').textContent=v.s.toFixed(1);
+  document.getElementById('mo').textContent=v.m.toFixed(1)+'%';
+  document.getElementById('xo').textContent=v.x.toFixed(1)+'×';
+  document.getElementById('fo').textContent=v.f.toFixed(2);
+  const ev=v.s*v.m/100*v.f*v.x, px=(ev+NET)/SH, chg=px/NOW-1, ann=Math.pow(px/NOW,1/YRS)-1;
+  document.getElementById('rp').textContent='$'+px.toFixed(0);
+  const rc=document.getElementById('rc'),ra=document.getElementById('ra');
+  rc.textContent=(chg>=0?'+':'−')+Math.abs(chg*100).toFixed(0)+'%';
+  ra.textContent=(ann>=0?'+':'−')+Math.abs(ann*100).toFixed(1)+'%';
+  [rc,ra].forEach(e=>e.className='v num '+(chg>=0?'up':'down'));
+}
+ids.forEach(i=>document.getElementById(i).addEventListener('input',()=>{
+  document.querySelectorAll('.presets button').forEach(b=>b.setAttribute('aria-pressed','false'));calc();}));
+document.querySelectorAll('.presets button').forEach(b=>b.addEventListener('click',()=>setP(b.dataset.p)));
+setP('base');
+})();
+</script>
+</body>
+</html>
