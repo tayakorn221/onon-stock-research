@@ -108,6 +108,11 @@ input[type=range]{grid-column:1/-1;width:100%;accent-color:var(--series)}
   background:var(--surface-2);font-weight:700;font-size:13px;display:grid;place-items:center}
 .small{font-size:13.5px;color:var(--ink-2)}
 .warnbox{border-left:3px solid var(--warn);padding:10px 16px;background:var(--surface);border-radius:0 8px 8px 0;font-size:14.5px}
+.breaks{margin-top:16px;border-left:3px solid var(--bad);border-radius:0 12px 12px 0}
+.breaks ul{list-style:none;padding:0;margin:0}
+.breaks li{display:grid;grid-template-columns:1fr auto;gap:2px 16px;align-items:baseline;padding:10px 0;border-top:1px solid var(--grid)}
+.breaks li:first-child{border-top:0}
+.breaks .now{font-size:12.5px;color:var(--muted);text-align:right;white-space:nowrap}
 .sources{font-size:13px;color:var(--ink-2);columns:2;column-gap:28px}
 .sources li{break-inside:avoid;margin-bottom:6px}
 footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--grid);font-size:13px;color:var(--muted)}
@@ -118,6 +123,8 @@ footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--grid);font-si
   .grid2,.bb{grid-template-columns:1fr}
   .sources{columns:1}
   .tile .v{font-size:22px}
+  .breaks li{grid-template-columns:1fr}
+  .breaks .now{text-align:left}
 }
 </style>
 </head>
@@ -318,6 +325,15 @@ footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--grid);font-si
       <li><b>สินค้าใหม่ปี 2570</b> บริษัทบอกไว้ว่าจะมีนวัตกรรมใหม่ชุดใหญ่ ต้องดูว่าคนตอบรับจริงหรือไม่</li>
       <li><b>บริษัทซื้อหุ้นคืนจริงเท่าไหร่</b> ถ้าซื้อคืนเร็วตอนราคาต่ำ แสดงว่าผู้บริหารเชื่อในราคาหุ้นของตัวเอง</li>
     </ol>
+  </div>
+  <div class="card breaks">
+    <h3>เส้นที่ถ้าข้ามแล้ว มุมมองฝั่งบวกใช้ไม่ได้</h3>
+    <p class="small">เช็กได้ทันทีที่งบ Q3/2569 ออก (บริษัทยังไม่ประกาศวัน คาดว่ากลางเดือน พ.ย.) ถ้าเข้าข้อใดข้อหนึ่ง แปลว่าที่ยอดชะลอไม่ได้มาจากการคุมสต๊อกโดยตั้งใจ แต่คนซื้อน้อยลงจริง</p>
+    <ul class="small">
+      <li><span><b>ยอดขายส่งในอเมริกาติดลบ</b> ร้านค้าส่งเริ่มสั่งของน้อยกว่าปีก่อน</span><span class="now num">Q2/2569: +4.8%</span></li>
+      <li><span><b>อัตรากำไรขั้นต้นต่ำกว่า 64%</b> ต้องลดราคาขายจนกำไรหด (ต่ำกว่า 65% ถือเป็นสัญญาณเตือน)</span><span class="now num">Q2/2569: 65.4%</span></li>
+      <li><span><b>ลดเป้ายอดขายปี 2569 เป็นรอบที่สอง</b> ต่ำกว่า <span style="white-space:nowrap">"20% ต้น ๆ"</span> ที่เพิ่งลดมาเมื่อ ส.ค.</span><span class="now">เป้าตอนนี้: 20% ต้น ๆ</span></li>
+    </ul>
   </div>
 </section>
 
