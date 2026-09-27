@@ -113,6 +113,15 @@ input[type=range]{grid-column:1/-1;width:100%;accent-color:var(--series)}
 .breaks li{display:grid;grid-template-columns:1fr auto;gap:2px 16px;align-items:baseline;padding:10px 0;border-top:1px solid var(--grid)}
 .breaks li:first-child{border-top:0}
 .breaks .now{font-size:12.5px;color:var(--muted);text-align:right;white-space:nowrap}
+.plain{list-style:none;padding:0;margin:0}
+.plain li{padding:8px 0;border-top:1px solid var(--grid)}
+.plain li:first-child{border-top:0;padding-top:0}
+.evid{list-style:none;padding:0;margin:0}
+.evid li{display:grid;grid-template-columns:1fr auto;gap:4px 16px;align-items:baseline;padding:10px 0;border-top:1px solid var(--grid)}
+.evid li:first-child{border-top:0;padding-top:0}
+.evid .lean{font-size:12.5px;font-weight:600;color:var(--ink);background:var(--surface-2);border-radius:999px;padding:2px 10px;white-space:nowrap}
+table.cal th,table.cal td{white-space:normal;vertical-align:top;text-align:left}
+table.cal td:first-child{white-space:nowrap;padding-right:14px}
 .sources{font-size:13px;color:var(--ink-2);columns:2;column-gap:28px}
 .sources li{break-inside:avoid;margin-bottom:6px}
 footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--grid);font-size:13px;color:var(--muted)}
@@ -125,6 +134,8 @@ footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--grid);font-si
   .tile .v{font-size:22px}
   .breaks li{grid-template-columns:1fr}
   .breaks .now{text-align:left}
+  .evid li{grid-template-columns:1fr}
+  .evid .lean{justify-self:start}
 }
 </style>
 </head>
@@ -132,7 +143,7 @@ footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--grid);font-si
 <div class="wrap">
 
 <header>
-  <div class="eyebrow">เอกสารประกอบการตัดสินใจ · ข้อมูล ณ 25 ก.ย. 2569 · ราคาปิด 24 ก.ย.</div>
+  <div class="eyebrow">เอกสารประกอบการตัดสินใจ · ข้อมูล ณ 25 ก.ย. 2569 · ราคาปิด 24 ก.ย. · หัวข้อ 09–10 อัปเดต 27 ก.ย.</div>
   <h1>หุ้น On Holding (ONON)</h1>
   <p class="lede">บริษัทเจ้าของรองเท้า On จากสวิตเซอร์แลนด์ จดทะเบียนในตลาด NYSE หน้านี้รวบรวมข้อเท็จจริง ตัวเลข และมุมมองทั้งฝั่งซื้อและฝั่งขาย เพื่อให้ตัดสินใจเองได้ ไม่ใช่คำแนะนำให้ซื้อหรือขาย</p>
 
@@ -339,6 +350,100 @@ footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--grid);font-si
 
 <section>
   <div class="sec-no">09</div>
+  <h2>ก่อนงบ Q3/2569: ตลาดตั้งความหวังไว้แค่ไหน</h2>
+  <p class="sec-sub">งบออกราวกลาง พ.ย. บริษัทยังไม่ประกาศวัน · ข้อมูล ณ 27 ก.ย. 2569</p>
+  <div class="grid2">
+    <div class="card">
+      <h3>ตัวเลขที่ตั้งไว้</h3>
+      <ul class="plain small">
+        <li><b>ยอดขาย Q3</b> บริษัทบอกว่าจะโต "ราว 17%" หลังตัดผลค่าเงิน ตัวเลขนี้ประกาศวัน Investor Day (22 ก.ย.) ตอนเหลืออีก 8 วันจะปิดไตรมาส · นักวิเคราะห์คาดไว้ราว 928 ล้านฟรังก์ เท่ากับโต 17% จากฐาน 794 ล้านพอดี</li>
+        <li><b>ทั้งปี 2569</b> บริษัทย้ำเป้าเดิม: โต 20% ต้น ๆ หลังตัดผลค่าเงิน · 3,470–3,560 ล้านฟรังก์ · อัตรากำไรขั้นต้นอย่างน้อย 65% · EBITDA ที่ปรับปรุงแล้ว 19.5–20%</li>
+        <li><b>ฐานปีก่อนสูง</b> Q3/2568 ยอดขายส่งโต 32.5% (ตัดผลค่าเงิน) อัตรากำไรขั้นต้น 65.7% · EBITDA ที่ปรับปรุงแล้ว 22.6%</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>อ่านงบ Q3 ต้องระวัง</h3>
+      <ul class="plain small">
+        <li><b>เงินคืนภาษีนำเข้า</b> สูงสุด 65 ล้านดอลลาร์ (ราว <span style="white-space:nowrap">53 ล้านฟรังก์</span>) จะบันทึกเข้ากำไรขั้นต้นของ Q3 ทำให้อัตรากำไรขั้นต้นที่รายงานสูงขึ้นราว 5–6 จุด และกำไรต่อหุ้นดูสูงกว่าปกติ ให้ดูตัวเลขที่ไม่รวมก้อนนี้</li>
+        <li><b>ค่าเงินแทบไม่กดตัวเลขแล้ว</b> ดอลลาร์เทียบฟรังก์ใน Q3 เฉลี่ยใกล้ปีก่อน ยอดขายที่รายงานเป็นฟรังก์จึงน่าจะใกล้ตัวเลขที่ตัดผลค่าเงิน (ครึ่งปีแรกห่างกัน 8–12 จุด)</li>
+        <li><b>ภาษีนำเข้าจากเวียดนาม</b> ที่ใช้จริงตอนนี้ 12.5% ต่ำกว่า 20% ที่บริษัทใส่ไว้ในเป้า</li>
+        <li><b>ทั้งปีต้องการ Q4 เท่าไร</b> ถ้าทั้งปีโต 20% / 21% / 22% (ตัดผลค่าเงิน) Q4 ต้องโต 15% / 19% / 23%</li>
+      </ul>
+    </div>
+  </div>
+  <div class="card" style="margin-top:16px">
+    <h3>หลักฐานตอนนี้ของเส้นทั้ง 3 ในหัวข้อ 08</h3>
+    <ul class="evid small">
+      <li><span><b>ยอดขายส่งในอเมริกาหดตัวเพราะของขายไม่ออก</b> บริษัทบอกไว้แล้วว่า Q3 ยังคุมการส่งของเข้าร้านค้าส่ง โดยเฉพาะในอเมริกา และฐานปีก่อนสูง ตัวเลขจึงอาจแถว 0 หรือติดลบ · แต่ Telsey (23 ก.ย.) และ BMO (24 ก.ย.) เห็นว่าของในร้านค้าส่งสหรัฐฯ ขายออกดีขึ้นจาก Q2</span><span class="lean">ไม่ชัด ต้องฟังคำอธิบาย</span></li>
+      <li><span><b>อัตรากำไรขั้นต้นต่ำกว่า 64%</b> Q2 อยู่ที่ 65.4% · ภาษีที่จ่ายจริงต่ำกว่าที่ใส่ในเป้า · สัดส่วนขายตรงสูงขึ้น · ความเสี่ยงคือตลาดลดราคาหนัก และสต๊อกสูงกว่าปีก่อนราว 31% (Jefferies)</span><span class="lean">เอียงไปทางไม่ข้าม</span></li>
+      <li><span><b>ลดเป้าปี 2569 รอบสอง</b> บริษัทเพิ่งย้ำเป้าเมื่อ 22 ก.ย. · ขอบล่าง 20% ต้องการให้ Q4 โตแค่ราว 15% · ความเสี่ยงคือบีบเป้าลงไปที่ขอบล่าง ซึ่งตลาดอาจอ่านว่าเป็นการลดเป้าแบบอ่อน ๆ</span><span class="lean">เอียงไปทางไม่ข้าม</span></li>
+    </ul>
+  </div>
+  <div class="card" style="margin-top:16px">
+    <h3>ร้านค้า คู่แข่ง และนักวิเคราะห์พูดว่าอะไร (ส.ค.–ก.ย.)</h3>
+    <ul class="plain small">
+      <li><b>Dick's (25 ส.ค.)</b> ร้าน Dick's ยอดขายสาขาเดิม +4.9% แต่ Foot Locker −3.6% และลดเป้าทั้งปีของ Foot Locker เหลือ −2% ถึง 0% · ตลาดรองเท้ากีฬาลดราคาหนักขึ้น</li>
+      <li><b>JD Sports</b> อเมริกาเหนือ −4.5% ใน Q2 · รองเท้าวิ่งยังขายดี · คาดว่าจะลดราคาต่อไปถึงครึ่งปีหลัง</li>
+      <li><b>Nordstrom</b> ลดราคารองเท้า On ถึง 40% (20 ก.ย.) · ผู้บริหาร On ยืนยันว่า On ลดราคาน้อยที่สุดในกลุ่ม</li>
+      <li><b>ทั้งหมวดรองเท้าวิ่งยังโต</b> Circana: ยอดขายในสหรัฐฯ ครึ่งปีแรก +13% ปัญหาจึงอยู่ที่ส่วนแบ่งตลาดและการลดราคา ไม่ใช่หมวดหดตัว · Amer Sports (Salomon, Arc'teryx) เพิ่งยกเป้ายอดขาย Q3 เป็น +20–22% (16 ก.ย.)</li>
+      <li><b>นักวิเคราะห์หลัง Investor Day</b> ส่วนใหญ่คงคำแนะนำเดิม · BMO $28→$33 · Needham $37→$40 · Williams Trading $27→$31 · Jefferies ยังให้ $20</li>
+      <li><b>ผู้ก่อตั้งซื้อหุ้น</b> Caspar Coppetti และ Olivier Bernhard ซื้อคนละ 65,000 หุ้นที่ราว $30.67 (14 ส.ค.) · <b>หุ้นที่ถูกขายชอร์ต</b> 23.0 ล้านหุ้น (15 ก.ย.) เพิ่มขึ้นราว 33% หลังงบ ส.ค.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="sec-no">10</div>
+  <h2>วันงบ หุ้นตัวนี้ขยับแค่ไหน</h2>
+  <p class="sec-sub">20 รอบตั้งแต่เข้าตลาด บริษัทประกาศงบก่อนตลาดเปิดทุกรอบ หุ้นจึงขยับในวันเดียวกัน</p>
+  <div class="card">
+    <div class="fig-title">ราคาปิดวันงบ เทียบราคาปิดวันก่อน</div>
+    <div class="fig-sub">แถบเทาคือช่วงที่ราคาออปชันสะท้อนสำหรับงบรอบหน้า ราว ±9% (ณ 25 ก.ย.)</div>
+    <svg id="movesChart" class="chart" viewBox="0 0 800 260" role="img" aria-label="การขยับของราคาหุ้นในวันงบ 20 รอบ ขึ้น 10 ลง 10 มากสุด +26.4% ต่ำสุด −20.3%"></svg>
+    <div class="fig-note">งบ Q3 (ออกเดือน พ.ย.) 5 รอบที่ผ่านมา: +25.2% · −8.7% · −3.4% · −0.2% · +18.0%</div>
+  </div>
+  <div class="tiles">
+    <div class="tile"><div class="k">ขยับเฉลี่ยในวันงบ</div><div class="v num">10.3%</div><div class="n">ไม่คิดทิศ · ขึ้น 10 ลง 10</div></div>
+    <div class="tile"><div class="k">ราคาออปชันสะท้อนรอบหน้า</div><div class="v num">~9%</div><div class="n">ใกล้ค่าเฉลี่ย 8 รอบหลัง (9.0%)</div></div>
+    <div class="tile"><div class="k">3 รอบล่าสุด</div><div class="v num down">ลงทั้งหมด</div><div class="n">−6.1% · −0.6% · −20.3%</div></div>
+  </div>
+  <div class="grid2" style="margin-top:16px">
+    <div class="card">
+      <h3>ตลาดคาดไว้ vs ที่เกิดจริง</h3>
+      <p class="small">ช่วงขยับที่ราคาออปชันสะท้อนก่อนงบแต่ละรอบ (Bloomberg) เทียบกับราคาปิดวันงบ</p>
+      <table class="small num">
+        <tr><th>งบ</th><th>ตลาดคาด</th><th>จริง</th></tr>
+        <tr><td>ส.ค. 2567</td><td>±11.0%</td><td class="up">+4.3%</td></tr>
+        <tr><td>พ.ย. 2567</td><td>±11.1%</td><td>−0.2%</td></tr>
+        <tr><td>มี.ค. 2568</td><td>±13.0%</td><td class="up">+5.8%</td></tr>
+        <tr><td>พ.ค. 2568</td><td>±9.7%</td><td class="up"><b>+11.8%</b></td></tr>
+        <tr><td>ส.ค. 2568</td><td>±8.7%</td><td class="up"><b>+9.0%</b></td></tr>
+        <tr><td>พ.ย. 2568</td><td>±8.8%</td><td class="up"><b>+18.0%</b></td></tr>
+        <tr><td>มี.ค. 2569</td><td>±10.1%</td><td class="down">−6.1%</td></tr>
+        <tr><td>พ.ค. 2569</td><td>±9.7%</td><td class="down">−0.6%</td></tr>
+        <tr><td>ส.ค. 2569</td><td>±8.8%</td><td class="down"><b>−20.3%</b></td></tr>
+      </table>
+      <p class="fig-note" style="margin-bottom:0">ตัวหนา = หลุดกรอบที่ตลาดคาด (4 ใน 9 รอบ) · ผลมักออกสองขั้ว คือขยับน้อยมาก หรือขยับเกือบ 2 เท่าของที่คาด</p>
+    </div>
+    <div class="card">
+      <h3>ปฏิทินก่อนงบ</h3>
+      <table class="small cal">
+        <tr><th>วันที่</th><th>เหตุการณ์</th></tr>
+        <tr><td>1 ต.ค.</td><td>Nike งบไตรมาส มิ.ย.–ส.ค. · รองเท้าวิ่งยังโตต่อไหม ระบายสต๊อกหนักแค่ไหน</td></tr>
+        <tr><td>15 ต.ค.</td><td>ยอดค้าปลีกสหรัฐฯ เดือน ก.ย.</td></tr>
+        <tr><td>~22 ต.ค. (คาด)</td><td>Deckers (HOKA) งบ ก.ค.–ก.ย. · ยอดขายส่ง HOKA ในสหรัฐฯ เป็นตัวเทียบที่ใกล้ On ที่สุด</td></tr>
+        <tr><td>~27 ต.ค.–3 พ.ย. (คาด)</td><td>On ประกาศวันงบ · ที่ผ่านมาประกาศล่วงหน้า 14 วันทุกครั้ง</td></tr>
+        <tr><td>29 ต.ค.</td><td>adidas Q3 · รองเท้าวิ่ง อเมริกาเหนือ การลดราคา</td></tr>
+        <tr><td>10–17 พ.ย. (คาด)</td><td><b>On งบ Q3/2569</b> · งบ Q3 ย้อนหลังออกวันที่ 12–16 พ.ย. ทุกปี</td></tr>
+        <tr><td>13 พ.ย.</td><td>Asics Q3 (อาจออกหลัง On)</td></tr>
+      </table>
+      <p class="fig-note" style="margin-bottom:0">วันงบคู่แข่ง ONON มักขยับแค่ ±2–4% เช่น −3.3% วันงบ Nike (1 ต.ค. 2568) และ −3.5% วันงบ Deckers (24 ต.ค. 2568) · บางเว็บลงวันงบ On ว่า 17 พ.ย. แต่บริษัทยังไม่ได้ประกาศ</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-no">11</div>
   <h2>เรื่องเฉพาะนักลงทุนไทย</h2>
   <div class="card small">
     <p><b>ความเสี่ยงค่าเงินสองชั้น</b> บริษัทรายงานงบเป็นฟรังก์สวิส หุ้นซื้อขายเป็นดอลลาร์ และเงินที่ลงทุนเป็นบาท การเปลี่ยนแปลงของ CHF/USD และ USD/THB มีผลกับผลตอบแทนทั้งคู่</p>
@@ -367,11 +472,26 @@ footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--grid);font-si
     <li><a href="https://www.businesswire.com/news/home/20250401111504/en/On-Announces-Leadership-Evolution">On — Leadership evolution (Apr 2025)</a></li>
     <li><a href="https://www.sec.gov/Archives/edgar/data/1858985/000119312521253415/d175570df1.htm">On F-1 (Class A/B voting structure)</a></li>
     <li><a href="https://www.macrotrends.net/stocks/charts/ONON/on-holding-ag/stock-price-history">Macrotrends — price history (ATH $63.62)</a></li>
+    <li><a href="https://press.on-running.com/on-reports-results-for-the-third-quarter-and-nine-month-period-ended-september-30-2025">On Q3/2025 results (ฐานปีก่อน)</a></li>
+    <li><a href="https://www.sec.gov/Archives/edgar/data/0001858985/000185898526000014/a26q1-ex991xpressrelease.htm">On Q1/2026 release — สมมติภาษีเวียดนาม 20%</a></li>
+    <li><a href="https://globaltradealert.org/blog/forced-labour-section-301-final-action">Global Trade Alert — Section 301 เวียดนาม 12.5% (24 ก.ค. 2569)</a></li>
+    <li><a href="https://www.sec.gov/Archives/edgar/data/0001089063/000108906326000033/dks-2026801xex991earningsr.htm">Dick's Q2 2026 results (SEC 8-K)</a></li>
+    <li><a href="https://www.jdplc.com/q2-2026-27-trading-statement/">JD Sports Q2 trading statement</a> · <a href="https://www.jdplc.com/half-year-results-2026-27/">half-year results</a></li>
+    <li><a href="https://www.nbcnews.com/select/shopping/nordstrom-sneaker-sale-2026-rcna598713">NBC Select — Nordstrom ลดราคา On (20 ก.ย.)</a></li>
+    <li><a href="https://www.globenewswire.com/news-release/2026/08/17/3346103/0/en/performance-shoe-sales-pick-up-the-pace-amid-selective-us-consumer-spending-in-the-footwear-market.html">Circana — US running footwear H1 2026</a></li>
+    <li><a href="https://investors.amersports.com/financial-news/news-details/2026/Amer-Sports-Updates-Long-Term-Financial-Algorithm-and-Third-Quarter-2026-Guidance/default.aspx">Amer Sports — ยกเป้า Q3 (16 ก.ย.)</a></li>
+    <li><a href="https://www.investing.com/news/analyst-ratings/telsey-reiterates-outperform-on-on-holding-stock-after-investor-day-93CH-4912430">Telsey (23 ก.ย.)</a> · <a href="https://www.investing.com/news/analyst-ratings/bmo-raises-on-holding-stock-price-target-on-growth-outlook-93CH-4915696">BMO (24 ก.ย.)</a> · <a href="https://www.investing.com/news/analyst-ratings/needham-raises-on-holding-stock-price-target-on-growth-outlook-93CH-4912624">Needham</a></li>
+    <li><a href="https://www.proactiveinvestors.com/companies/news/1098906/on-holding-shares-surge-11-despite-analyst-skepticism-on-investor-day-targets-1098906.html">Proactive — Jefferies หลัง Investor Day (สต๊อก)</a></li>
+    <li><a href="https://ortex.news/articles/167945/on-holding-bulls-buy-the-dip-bears-hold-their-ground">Ortex — ผู้ก่อตั้งซื้อหุ้น 14 ส.ค.</a></li>
+    <li><a href="https://api.finra.org/data/group/otcMarket/name/consolidatedShortInterest">FINRA — short interest (15 ก.ย. 2569)</a></li>
+    <li><a href="https://finance.yahoo.com/quote/ONON/history/">Yahoo — ราคารายวัน (การขยับวันงบ)</a> · <a href="https://data.sec.gov/submissions/CIK0001858985.json">SEC EDGAR — วันยื่นงบ</a></li>
+    <li><a href="https://ng.investing.com/news/stock-market-news/on-holding-may-see-88-stock-move-on-earnings-next-week-93CH-2637070">Investing.com/Bloomberg — ช่วงขยับที่ตลาดคาดก่อนงบ</a></li>
+    <li><a href="https://investors.nike.com/investors/news-events-and-reports/investor-news/investor-news-details/2026/NIKE-Inc--Announces-First-Quarter-Fiscal-2027-Earnings-and-Conference-Call/default.aspx">Nike — วันประกาศงบ 1 ต.ค.</a> · <a href="https://www.businesswire.com/news/home/20251029733407/en/On-to-Release-Third-Quarter-2025-Results-on-Wednesday-November-12-2025">On ประกาศวันงบ Q3/2025 ล่วงหน้า 14 วัน</a></li>
   </ul>
 </section>
 
 <footer>
-  เอกสารนี้รวบรวมข้อมูลสาธารณะเพื่อประกอบการตัดสินใจเท่านั้น ไม่ใช่คำแนะนำการลงทุน ผู้จัดทำไม่ใช่ที่ปรึกษาการลงทุนที่มีใบอนุญาต ตัวเลขอาจเปลี่ยนไปหลังวันที่ระบุ · จัดทำ <span style="white-space:nowrap">25 ก.ย. 2569</span> · <span style="white-space:nowrap">แก้ไข 27 ก.ย. 2569:</span> ยอดขายส่ง +4.8% ใน Q2 เป็นตัวเลขของทั้งบริษัท ไม่ใช่เฉพาะอเมริกา และใช้ราคาปิดแทนราคาระหว่างวันของวัน Investor Day
+  เอกสารนี้รวบรวมข้อมูลสาธารณะเพื่อประกอบการตัดสินใจเท่านั้น ไม่ใช่คำแนะนำการลงทุน ผู้จัดทำไม่ใช่ที่ปรึกษาการลงทุนที่มีใบอนุญาต ตัวเลขอาจเปลี่ยนไปหลังวันที่ระบุ · จัดทำ <span style="white-space:nowrap">25 ก.ย. 2569</span> · <span style="white-space:nowrap">แก้ไข 27 ก.ย. 2569:</span> ยอดขายส่ง +4.8% ใน Q2 เป็นตัวเลขของทั้งบริษัท ไม่ใช่เฉพาะอเมริกา และใช้ราคาปิดแทนราคาระหว่างวันของวัน Investor Day · เพิ่มหัวข้อ 09 (ก่อนงบ Q3) และ 10 (วันงบหุ้นขยับแค่ไหน)
 </footer>
 </div>
 <div class="tip" id="tip"></div>
@@ -470,21 +590,57 @@ function drawRegion(){
   el('line',{x1:L,x2:L,y1:T,y2:T+rowH*d.length,stroke:'var(--axis)','stroke-width':1},svg);
 }
 
-function drawAll(){drawRev();drawLines();drawRegion();}
+// 5. Earnings-day moves (close vs prior close), all reports since IPO
+function drawMoves(){
+  const svg=document.getElementById('movesChart');
+  const d=[["Q3/2564","16 พ.ย. 2564",8.2,25.2],["Q4/2564","18 มี.ค. 2565",8.8,13.9],["Q1/2565","17 พ.ค. 2565",13.5,1.0],["Q2/2565","16 ส.ค. 2565",2.2,-0.7],
+    ["Q3/2565","16 พ.ย. 2565",-4.0,-8.7],["Q4/2565","21 มี.ค. 2566",20.3,26.4],["Q1/2566","16 พ.ค. 2566",-6.3,-9.7],["Q2/2566","15 ส.ค. 2566",-12.7,-14.0],
+    ["Q3/2566","14 พ.ย. 2566",-5.0,-3.4],["Q4/2566","12 มี.ค. 2567",-13.4,-8.9],["Q1/2567","14 พ.ค. 2567",15.2,18.3],["Q2/2567","13 ส.ค. 2567",5.0,4.3],
+    ["Q3/2567","12 พ.ย. 2567",2.4,-0.2],["Q4/2567","4 มี.ค. 2568",6.2,5.8],["Q1/2568","13 พ.ค. 2568",7.2,11.8],["Q2/2568","12 ส.ค. 2568",14.2,9.0],
+    ["Q3/2568","12 พ.ย. 2568",24.6,18.0],["Q4/2568","3 มี.ค. 2569",-12.2,-6.1],["Q1/2569","12 พ.ค. 2569",-5.7,-0.6],["Q2/2569","11 ส.ค. 2569",-18.5,-20.3]];
+  const yearAt={0:"2564",1:"2565",5:"2566",9:"2567",13:"2568",17:"2569"};
+  const H=260,W=fit(svg,H),narrow=W<520,L=40,R=narrow?6:12,T=16,B=30,min=-25,max=30,IM=9.3;
+  const y=v=>T+(H-T-B)*(max-v)/(max-min);
+  el('rect',{x:L,y:y(IM),width:W-L-R,height:y(-IM)-y(IM),fill:'var(--surface-2)'},svg);
+  [-20,-10,0,10,20,30].forEach(t=>{
+    if(t)el('line',{x1:L,x2:W-R,y1:y(t),y2:y(t),stroke:'var(--grid)','stroke-width':1},svg);
+    const tx=el('text',{x:L-8,y:y(t)+4,'text-anchor':'end','font-size':11,fill:'var(--muted)'},svg);tx.textContent=(t>0?'+':t<0?'−':'')+Math.abs(t)+'%';
+  });
+  [IM,-IM].forEach(v=>el('line',{x1:L,x2:W-R,y1:y(v),y2:y(v),stroke:'var(--axis)','stroke-width':1,'stroke-dasharray':'3 3'},svg));
+  const band=(W-L-R)/d.length,bw=Math.max(6,Math.min(22,band*.62)),z=y(0);
+  const iMax=d.reduce((a,p,i)=>p[3]>d[a][3]?i:a,0),iMin=d.reduce((a,p,i)=>p[3]<d[a][3]?i:a,0);
+  d.forEach((p,i)=>{
+    const cx=L+band*i+band/2,v=p[3],g=el('g',{},svg),x0=cx-bw/2,r=Math.min(3,bw/2);
+    el('rect',{x:cx-band/2,y:T,width:band,height:H-T-B,fill:'transparent'},g);
+    if(v>=0){el('path',{d:colPath(x0,y(v),bw,z-y(v),r),fill:'var(--good)'},g);}
+    else{const h=y(v)-z,rr=Math.min(r,h);el('path',{d:`M${x0},${z}V${z+h-rr}Q${x0},${z+h} ${x0+rr},${z+h}H${x0+bw-rr}Q${x0+bw},${z+h} ${x0+bw},${z+h-rr}V${z}Z`,fill:'var(--bad)'},g);}
+    if(i===iMax||i===iMin||i===d.length-1){
+      const lb=el('text',{x:cx,y:v>=0?y(v)-6:y(v)+14,'text-anchor':i===d.length-1?'end':'middle','font-size':12,'font-weight':600,fill:'var(--ink)'},g);
+      if(i===d.length-1)lb.setAttribute('x',cx+bw/2);
+      lb.textContent=(v>=0?'+':'−')+Math.abs(v).toFixed(1)+'%';
+    }
+    if(yearAt[i]&&!(narrow&&i===0)){const xl=el('text',{x:cx,y:H-B+20,'text-anchor':'middle','font-size':11,fill:'var(--ink-2)'},g);xl.textContent=yearAt[i];}
+    const s=n=>(n>=0?'+':'−')+Math.abs(n).toFixed(1)+'%';
+    hover(g,`<b>งบ ${p[0]}</b> · ${p[1]}<br>เปิด ${s(p[2])} · ปิด ${s(p[3])}`);
+  });
+  el('line',{x1:L,x2:W-R,y1:z,y2:z,stroke:'var(--axis)','stroke-width':1},svg);
+}
+
+function drawAll(){drawRev();drawLines();drawRegion();drawMoves();}
 drawAll();
 // a background tab reports width 0 until it's shown — redraw whenever a chart's real width changes
 let rt,lastWidths='';
 function redrawIfChanged(){
-  const w=['revChart','growthChart','regionChart'].map(id=>Math.round(document.getElementById(id).getBoundingClientRect().width)).join(',');
+  const w=['revChart','growthChart','regionChart','movesChart'].map(id=>Math.round(document.getElementById(id).getBoundingClientRect().width)).join(',');
   if(w!==lastWidths&&!w.startsWith('0')){lastWidths=w;drawAll();}
 }
 function schedule(){clearTimeout(rt);rt=setTimeout(redrawIfChanged,120);}
-if('ResizeObserver' in window){const ro=new ResizeObserver(schedule);['revChart','growthChart','gmChart','regionChart'].forEach(id=>ro.observe(document.getElementById(id)));}
+if('ResizeObserver' in window){const ro=new ResizeObserver(schedule);['revChart','growthChart','gmChart','regionChart','movesChart'].forEach(id=>ro.observe(document.getElementById(id)));}
 window.addEventListener('resize',schedule);
 document.addEventListener('visibilitychange',()=>{if(!document.hidden){lastWidths='';schedule();}});
 if(document.fonts&&document.fonts.ready)document.fonts.ready.then(()=>{lastWidths='';schedule();});
 
-// 5. Calculator
+// 6. Calculator
 const P={bear:{s:4.3,m:18,x:8,f:1.22},base:{s:5.0,m:20.5,x:11,f:1.22},bull:{s:5.6,m:22,x:15,f:1.22}};
 const ids=['s','m','x','f'],NET=0.84,SH=0.33421,NOW=30.46,YRS=3.3;
 function setP(k){ids.forEach(i=>document.getElementById(i).value=P[k][i]);
